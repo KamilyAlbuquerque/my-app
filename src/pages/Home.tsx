@@ -2,9 +2,11 @@ import illustration from '../assets/images/illustration.svg'
 import logo from '../assets/images/logo.svg';
 import googleIcon from '../assets/images/google-icon.svg';
 
+import '../styles/auth.scss';
+
 export function Home () {
     return (
-        <div>
+        <div id='pageauth'>
             <aside>
                <img src={illustration} alt="Ilustração simbolizando perguntas e respostas" />
                <strong>Crie salas de Q&amp;A ao-vivo</strong>
@@ -23,7 +25,9 @@ export function Home () {
                         type="text" 
                         placeholder="Digite o código da sala"
                     />
-                    <button type="submit"></button>
+                    <button type="submit">
+                        Entrar na sala 
+                    </button>
                 </form>
                 </div> 
             </main>
